@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="../../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+</head>
+
+<body>
+       <div class="container">
+            {% if messages %}
+            <div class="container mt-3">
+                {% for message in messages %}
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    <header class="bg-dark">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5">
+                <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
+                    <div class="text-center">
+                        <p class="fw-bold text-success mb-2"></p>
+                        <h1 class="fw-bold">Understanding Emails Made Easy</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 mx-auto">
+                    <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
+                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"></div>
+                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);"></div>
+                        <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container text-center py-5"><img class="m-3" src="../../static/img/brands/img_1.png"></a><a href="#"> </a></div>
+    </section>
+    <section>
+        <div class="container bg-dark py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Our Services</p>
+                    <h3 class="fw-bold">What we can do for you</h3>
+                </div>
+            </div>
+            <div class="py-5 p-lg-5">
+                <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+                    <div class="col mb-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell text-success">
+                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title">Sentiment Analysis</h5>
+                                <p class="text-muted card-text mb-4">
+                                    Given an email and subject, our AI will give an accurate assessment and sentiment.&nbsp;</p><a class="btn btn-primary shadow" role="button" href="/analysis">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="mx-auto" style="max-width: 900px;"></div>
+        </div>
+    </section>
+
+    <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/js/bold-and-dark.js"></script>
+</body>
+{% endblock %}
+</html>
