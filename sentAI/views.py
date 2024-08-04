@@ -850,7 +850,6 @@ def analysis(request):
         'form': form,
         'prediction': prediction_label,
     }
-
     return render(request, 'analysis.html', context)
 
 
